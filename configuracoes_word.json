@@ -1,0 +1,100 @@
+{
+  "Slide 6 - Setor": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "SetorG1",
+      "placeholder_word": "{SetorG1}",
+      "largura_cm": 16.49
+    }
+  ],
+
+  "Slide 7 - Bolsa e MV": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "BolsaG1",
+      "placeholder_word": "{BolsaG1}",
+      "largura_cm": 13.33
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "BolsaG2",
+      "placeholder_word": "{BolsaG2}",
+      "largura_cm": 12.48
+    }
+  ],
+
+  "Slide 8 - Cat. e Seg.": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "CatG1",
+      "placeholder_word": "{CatG1}",
+      "largura_cm": 12.53
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "CatG2",
+      "placeholder_word": "{CatG2}",
+      "largura_cm": 13.87
+    }
+  ],
+
+  "Slide 9 - Mailig Agenda": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "AgendaG1",
+      "placeholder_word": "{AgendaG1}",
+      "largura_cm": 9.93
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "AgendaG2",
+      "placeholder_word": "{AgendaG2}",
+      "largura_cm": 10.56
+    }
+  ],
+
+  "Mailing Lembrete": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "MailingLembreteG1",
+      "placeholder_word": "{MailingLembreteG1}",
+      "largura_cm": 16.93
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "MailingLembreteG2",
+      "placeholder_word": "{MailingLembreteG2}",
+      "largura_cm": 16.93
+    }
+  ],
+
+  "Prévia Operacional": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "PreviaG1",
+      "placeholder_word": "{PreviaG1}",
+      "largura_cm": 16.93
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "PreviaG2",
+      "placeholder_word": "{PreviaG2}",
+      "largura_cm": 18
+    }
+  ],
+
+  "Slide 10 - Perido Div.": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "PeriodoDivG1",
+      "placeholder_word": "{PeriodoDivG1}",
+      "largura_cm": 12.58
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "PeriodoDivG2",
+      "placeholder_word": "{PeriodoDivG2}",
+      "largura_cm": 18
+    }
+  ]
+}
