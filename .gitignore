@@ -1,3 +1,3 @@
-.xlsx
-.log
-.docx
+*.xlsx
+*.log
+*.docx
