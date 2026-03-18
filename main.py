@@ -4,6 +4,7 @@ import win32com.client
 import os
 import logging
 import json
+import time
 
 # ==========================================
 # CONFIGURAÇÃO DE LOG
@@ -64,9 +65,6 @@ def inserir_grafico_vinculado(planilha, doc_word, config):
         range_word.PasteSpecial(Link=True)
         shape = doc_word.InlineShapes(doc_word.InlineShapes.Count)
 
-        if "largura_cm" in config:
-            shape.Width = cm_to_points(config["largura_cm"])
-
     substituir_placeholder_word(doc_word, config["placeholder_word"], colar)
 
 
@@ -84,7 +82,41 @@ def inserir_texto_excel(planilha, doc_word, config):
 
     substituir_placeholder_word(doc_word, config["placeholder_word"], escrever)
 
+# ==========================================
+# INSERIR MATRIZ/TABELA DO EXCEL (VERSÃO ROBUSTA)
+# ==========================================
+def inserir_matriz_excel(planilha, doc_word, config):
+    logging.info(f"Inserindo matriz do intervalo: {config['intervalo']}")
 
+    # 1. Selecionar o intervalo exato no Excel e copiar
+    intervalo = planilha.Range(config["intervalo"])
+    intervalo.Copy()
+
+    # Dá tempo ao Windows para processar a cópia na Área de Transferência
+    time.sleep(1) 
+
+    # 2. Definir a ação de colar no Word com sistema de Tentativas (Retry)
+    def colar_matriz(range_word):
+        tentativas_maximas = 3
+        
+        for tentativa in range(tentativas_maximas):
+            try:
+                # Tenta colar o conteúdo (a tabela)
+                range_word.Paste()
+                
+                # Se funcionar, limpamos a formatação extra de parágrafo e saímos do loop
+                break 
+                
+            except Exception as e:
+                logging.warning(f"Tentativa {tentativa + 1} falhou. O Word está ocupado. A aguardar...")
+                time.sleep(1.5)  # Espera 1.5 segundos antes de tentar novamente
+        else:
+            # Se o loop terminar e não conseguir colar nenhuma vez
+            logging.error(f"Falha ao colar a matriz {config['intervalo']} após {tentativas_maximas} tentativas.")
+
+    # 3. Chamar a nossa função principal para achar o texto e colar a matriz
+    substituir_placeholder_word(doc_word, config["placeholder_word"], colar_matriz)
+    
 # ==========================================
 # EXECUTAR AUTOMAÇÃO
 # ==========================================
@@ -137,9 +169,13 @@ def executar_automacao():
                 elif item["tipo"] == "texto":
                     inserir_texto_excel(planilha, doc, item)
 
+                # --- NOVA CONDIÇÃO ADICIONADA AQUI ---
+                elif item["tipo"] == "matriz":
+                    inserir_matriz_excel(planilha, doc, item)
+
         # SALVAR NOVA VERSÃO
         nome_base, extensao = os.path.splitext(caminho_word)
-        novo_caminho = f"{nome_base}_Atualizado{extensao}"
+        novo_caminho = f"{nome_base}_ComGraficos{extensao}"
         doc.SaveAs(novo_caminho)
 
         logging.info(f"Documento salvo em: {novo_caminho}")

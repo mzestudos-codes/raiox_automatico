@@ -1,55 +1,48 @@
 {
-  "Slide 6 - Setor": [
+  "Setor": [
     {
       "tipo": "grafico",
       "nome_grafico": "SetorG1",
-      "placeholder_word": "{SetorG1}",
-      "largura_cm": 16.49
+      "placeholder_word": "{SetorG1}"
     }
   ],
 
-  "Slide 7 - Bolsa e MV": [
+  "Bolsa e MV": [
     {
       "tipo": "grafico",
       "nome_grafico": "BolsaG1",
-      "placeholder_word": "{BolsaG1}",
-      "largura_cm": 13.33
+      "placeholder_word": "{BolsaG1}"
     },
     {
       "tipo": "grafico",
       "nome_grafico": "BolsaG2",
-      "placeholder_word": "{BolsaG2}",
-      "largura_cm": 12.48
+      "placeholder_word": "{BolsaG2}"
     }
   ],
 
-  "Slide 8 - Cat. e Seg.": [
+  "Cat. e Seg.": [
     {
       "tipo": "grafico",
       "nome_grafico": "CatG1",
-      "placeholder_word": "{CatG1}",
-      "largura_cm": 12.53
+      "placeholder_word": "{CatG1}"
     },
     {
       "tipo": "grafico",
       "nome_grafico": "CatG2",
-      "placeholder_word": "{CatG2}",
-      "largura_cm": 13.87
+      "placeholder_word": "{CatG2}"
     }
   ],
 
-  "Slide 9 - Mailig Agenda": [
+  "Mailig Agenda": [
     {
       "tipo": "grafico",
       "nome_grafico": "AgendaG1",
-      "placeholder_word": "{AgendaG1}",
-      "largura_cm": 9.93
+      "placeholder_word": "{AgendaG1}"
     },
     {
       "tipo": "grafico",
       "nome_grafico": "AgendaG2",
-      "placeholder_word": "{AgendaG2}",
-      "largura_cm": 10.56
+      "placeholder_word": "{AgendaG2}"
     }
   ],
 
@@ -57,14 +50,12 @@
     {
       "tipo": "grafico",
       "nome_grafico": "MailingLembreteG1",
-      "placeholder_word": "{MailingLembreteG1}",
-      "largura_cm": 16.93
+      "placeholder_word": "{MailingLembreteG1}"
     },
     {
       "tipo": "grafico",
       "nome_grafico": "MailingLembreteG2",
-      "placeholder_word": "{MailingLembreteG2}",
-      "largura_cm": 16.93
+      "placeholder_word": "{MailingLembreteG2}"
     }
   ],
 
@@ -72,29 +63,382 @@
     {
       "tipo": "grafico",
       "nome_grafico": "PreviaG1",
-      "placeholder_word": "{PreviaG1}",
-      "largura_cm": 16.93
+      "placeholder_word": "{PreviaG1}"
     },
     {
       "tipo": "grafico",
       "nome_grafico": "PreviaG2",
-      "placeholder_word": "{PreviaG2}",
-      "largura_cm": 18
+      "placeholder_word": "{PreviaG2}"
     }
   ],
 
-  "Slide 10 - Perido Div.": [
+  "Perido Div.": [
     {
       "tipo": "grafico",
       "nome_grafico": "PeriodoDivG1",
-      "placeholder_word": "{PeriodoDivG1}",
-      "largura_cm": 12.58
+      "placeholder_word": "{PeriodoDivG1}"
     },
     {
       "tipo": "grafico",
       "nome_grafico": "PeriodoDivG2",
-      "placeholder_word": "{PeriodoDivG2}",
-      "largura_cm": 18
+      "placeholder_word": "{PeriodoDivG2}"
+    }
+  ],
+
+  "Dias Div.": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "DiasDivG1",
+      "placeholder_word": "{DiasDivG1}"
+    }
+  ],
+
+  "Div por Setor": [
+    {
+      "tipo": "matriz",
+      "intervalo": "G4:I24",
+      "placeholder_word": "{TabelaDivsporSetor}"
+    }
+  ],
+
+  "Periodo. Div. Compar": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "ConcetracaoDivsG1",
+      "placeholder_word": "{ConcetracaoDivsG1}"
+    }
+  ],
+
+  "Conf. por Dia": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "QtdConfDiaG1",
+      "placeholder_word": "{QtdConfDiaG1}"
+    }
+  ],
+
+  "Conf Concent. Setor": [
+    {
+      "tipo": "matriz",
+      "intervalo": "G4:I24",
+      "placeholder_word": "{TabelaConfsporSetor}"
+    }
+  ],
+
+  "Periodo Conf. Compar": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "ConcentracaoConfporPeriodoG1",
+      "placeholder_word": "{ConcentracaoConfporPeriodoG1}"
+    }
+  ],
+
+  "Horários Confs": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "HorarioConfsG1",
+      "placeholder_word": "{HorarioConfsG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "HorarioConfsG2",
+      "placeholder_word": "{HorarioConfsG2}"
+    }
+  ],
+
+  "Horário Conf PT": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "HorárioConfPTG1",
+      "placeholder_word": "{HorárioConfPTG1}"
+    }
+  ],
+
+  "Horário Conf EN": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "HorárioConfENG1",
+      "placeholder_word": "{HorárioConfENG1}"
+    }
+  ],
+
+  "Conf Setor Horario": [
+    {
+      "tipo": "matriz",
+      "intervalo": "G4:I24",
+      "placeholder_word": "{TabelaConfSetorHorario}"
+    }
+  ],
+
+  "Evolu Trad. Siml": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "EvoluTradSimulG1",
+      "placeholder_word": "{EvoluTradSimulG1}"
+    }
+  ],
+
+  "Teleconf x Video": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "TeleconfxVideoG1",
+      "placeholder_word": "{TeleconfxVideoG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "TeleconfxVideoG2",
+      "placeholder_word": "{TeleconfxVideoG2}"
+    }
+  ],
+
+  "Videoconf x Setor": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "VideoconfxSetorG1",
+      "placeholder_word": "{VideoconfxSetorG1}"
+    }
+  ],
+
+  "Receita": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "ReceitaG1",
+      "placeholder_word": "{ReceitaG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "ReceitaG2",
+      "placeholder_word": "{ReceitaG2}"
+    }
+  ],
+
+  "Margem EBITDA": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "MargemEBITDAG1",
+      "placeholder_word": "{MargemEBITDAG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "MargemEBITDAG2",
+      "placeholder_word": "{MargemEBITDAG2}"
+    }
+  ],
+
+  "Lucro Prejuízo": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "LucroPrejuizoG1",
+      "placeholder_word": "{LucroPrejuizoG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "LucroPrejuizoG2",
+      "placeholder_word": "{LucroPrejuizoG2}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "LucroPrejuizoG3",
+      "placeholder_word": "{LucroPrejuizoG3}"
+    }
+  ],
+
+  "Receita Líquida - IBOV": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "ReceitaIBOVG1",
+      "placeholder_word": "{ReceitaIBOVG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "ReceitaIBOVG2",
+      "placeholder_word": "{ReceitaIBOVG2}"
+    }
+  ],
+
+  "Receita Líquida - SMLL": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "ReceitaSMLLG1",
+      "placeholder_word": "{ReceitaSMLLG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "ReceitaSMLLG2",
+      "placeholder_word": "{ReceitaSMLLG2}"
+    }
+  ],
+
+  "Receita Líquida - ISE": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "ReceitaISEG1",
+      "placeholder_word": "{ReceitaISEG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "ReceitaISEG2",
+      "placeholder_word": "{ReceitaISEG2}"
+    }
+  ],
+
+  "Receita Líquida - IDIV": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "ReceitaIDIVG1",
+      "placeholder_word": "{ReceitaIDIVG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "ReceitaIDIVG2",
+      "placeholder_word": "{ReceitaIDIVG2}"
+    }
+  ],
+
+  "EBITDA - IBOV": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "MargemEBITDAIBOVG1",
+      "placeholder_word": "{MargemEBITDAIBOVG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "MargemEBITDAIBOVG2",
+      "placeholder_word": "{MargemEBITDAIBOVG2}"
+    }
+  ],
+
+  "EBITDA - SMLL": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "MargemEBITDASMLLG1",
+      "placeholder_word": "{MargemEBITDASMLLG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "MargemEBITDASMLLG2",
+      "placeholder_word": "{MargemEBITDASMLLG2}"
+    }
+  ],
+
+  "EBITDA - ISE": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "MargemEBITDAISEG1",
+      "placeholder_word": "{MargemEBITDAISEG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "MargemEBITDAISEG2",
+      "placeholder_word": "{MargemEBITDAISEG2}"
+    }
+  ],
+
+  "EBITDA - IDIV": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "MargemEBITDAIDIVG1",
+      "placeholder_word": "{MargemEBITDAIDIVG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "MargemEBITDAIDIVG2",
+      "placeholder_word": "{MargemEBITDAIDIVG2}"
+    }
+  ],
+
+  "Lucro - IBOV": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "LucroPrejuizoIBOVG1",
+      "placeholder_word": "{LucroPrejuizoIBOVG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "LucroPrejuizoIBOVG2",
+      "placeholder_word": "{LucroPrejuizoIBOVG2}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "LucroPrejuizoIBOVG3",
+      "placeholder_word": "{LucroPrejuizoIBOVG3}"
+    }
+  ],
+
+  "Lucro - SMLL": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "LucroPrejuizoSMLLG1",
+      "placeholder_word": "{LucroPrejuizoSMLLG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "LucroPrejuizoSMLLG2",
+      "placeholder_word": "{LucroPrejuizoSMLLG2}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "LucroPrejuizoSMLLG3",
+      "placeholder_word": "{LucroPrejuizoSMLLG3}"
+    }
+  ],
+
+  "Lucro - ISE": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "LucroPrejuizoISEG1",
+      "placeholder_word": "{LucroPrejuizoISEG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "LucroPrejuizoISEG2",
+      "placeholder_word": "{LucroPrejuizoISEG2}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "LucroPrejuizoISEG3",
+      "placeholder_word": "{LucroPrejuizoISEG3}"
+    }
+  ],
+
+  "Lucro - IDIV": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "LucroPrejuizoIDIVG1",
+      "placeholder_word": "{LucroPrejuizoIDIVG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "LucroPrejuizoIDIVG2",
+      "placeholder_word": "{LucroPrejuizoIDIVG2}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "LucroPrejuizoIDIVG3",
+      "placeholder_word": "{LucroPrejuizoIDIVG3}"
+    }
+  ],
+
+  "Indices Performance": [
+    {
+      "tipo": "grafico",
+      "nome_grafico": "IndicesG1",
+      "placeholder_word": "{IndicesG1}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "IndicesG2",
+      "placeholder_word": "{IndicesG2}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "IndicesG3",
+      "placeholder_word": "{IndicesG3}"
+    },
+    {
+      "tipo": "grafico",
+      "nome_grafico": "IndicesG4",
+      "placeholder_word": "{IndicesG4}"
     }
   ]
 }
