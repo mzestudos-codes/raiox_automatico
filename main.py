@@ -5,6 +5,7 @@ import os
 import logging
 import json
 import time
+import sys
 
 # ==========================================
 # CONFIGURAÇÃO DE LOG
@@ -19,6 +20,13 @@ logging.basicConfig(
 def cm_to_points(cm):
     return cm * 28.3464567
 
+# ==========================================
+# CONFIGURAÇÃO DE EXECUTÁVEL
+# ==========================================
+
+def resource_path(relative_path):
+    base_path = getattr(sys, '_MEIPASS', os.path.dirname(os.path.abspath(__file__)))
+    return os.path.join(base_path, relative_path)
 
 # ==========================================
 # SUBSTITUIR PLACEHOLDER (VERSÃO ROBUSTA)
@@ -134,7 +142,8 @@ def executar_automacao():
     logging.info("---- INICIANDO AUTOMAÇÃO EXCEL -> WORD ----")
 
     try:
-        with open('configuracoes_word.json', 'r', encoding='utf-8') as f:
+        # with open('configuracoes_word.json', 'r', encoding='utf-8') as f:
+        with open(resource_path('configuracoes_word.json'), 'r', encoding='utf-8') as f:
             configuracoes = json.load(f)
     except FileNotFoundError:
         messagebox.showerror("Erro", "Arquivo configuracoes_word.json não encontrado.")
